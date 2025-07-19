@@ -114,7 +114,21 @@ import os
 print("Files in this directory:", os.listdir())
 
 
-# In[ ]:
+# In[ ]:# Create requirements.txt for Streamlit Cloud
+requirements = '''
+streamlit
+scikit-learn
+pandas
+matplotlib
+seaborn
+joblib
+'''
+
+with open("requirements.txt", "w") as f:
+    f.write(requirements.strip())
+
+print("requirements.txt created")
+
 
 
 
